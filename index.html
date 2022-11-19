@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<!-- Hello-->
+
+<!-- Hello -->
+
 <html>
-    <table style="background-color:#252525"></table>
     <head>
         <style>
-            h1 {text-align: center;}
-            p {text-align: center;}
-            div {text-align: center;}
+            h1 {text-align: left; font-size: 40px}
+            body {font-family: 'Calibri', sans-serif; font-size: 18px}
+            p {text-align: left;}
+            .myDiv {border: 5px outset red; background-color: lightblue; text-align: center;}
+            .header img {float: left; width: 150px; height: 100px; margin-left: 20px; margin-top: 10px;}
+            .header h1 { position: relative; top: 18px; left: 10px;}
+            .header img {animation: fadeIn 4s; -webkit-animation: fadeIn 4s; -moz-animation: fadeIn 4s; -o-animation: fadeIn 4s; -ms-animation: fadeIn 4s;}
+            @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }}
+
+            @-moz-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }}
+
+            @-webkit-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }}
+
+            @-o-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }}
+
+            @-ms-keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }}
         </style>
     </head>
 
     <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
+        <body style = "background-color: rgb(43, 43, 43);">
+            <div class="header">
+                <img src="img/logo.png" alt="logo"/>
+                <p>"this is some good shit baby"</p>
+            </div>
     </body>
 </html>
